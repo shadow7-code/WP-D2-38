@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8375431e4f.js" crossorigin="anonymous"></script>
+    <title>Biodata</title>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc; /* Light Gray */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Black (with opacity) */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #2196F3; /* Blue */
+}
+h2 {
+    color: #2196F3; /* Blue */
+    text-decoration: underline;
+}
+p, ul {
+    color: #333; /* Dark Gray */
+}
+ul {
+    margin-left: 10px;
+}
+
+.personal-info-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.image-section {
+    flex: 0 0 200px; /* Fixed width for image section */
+    margin-top: 30px; /* Align with content after h2 */
+}
+
+.image-section img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Black (with opacity) */
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.education-table th,
+.education-table td {
+    border: 1px solid #ddd; /* Light Gray */
+    padding: 12px;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: #f5f5f5; /* Light Gray */
+    font-weight: bold;
+}
+
+.image-section {
+    flex: 0 0 auto;
+    width: 150px;
+    margin: 0 auto 20px;
+}
+.image-section img {
+    width: 150px;
+    height: 150px;
+}
+/* Common spacing for all sections */
+.skills,
+.education,
+.achievements,
+.projects,
+.certificate
+.hobbies {
+    margin-bottom: 30px;
+}
+</style>
+<body>
+    <div class="container">
+        <header>
+            <h1>Biodata</h1>
+        </header>
+        <div class="image-section">
+            <center><img src="C:\Users\student\Downloads\IMG_20240803_112427.jpg" alt="Profile Image"></center>
+        </div>
+        <div class="personal-info-container">
+            <div class="personal-info">
+                <p><i class="fa-solid fa-user"></i> Pranav Jain</p>
+                <p><i class="fa-solid fa-envelope"></i> pranavjain72007@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9669966996</p>
+                <p><i class="fa-brands fa-github"></i>
+                    <a href="https://github.com/sample-profile" target="_blank">Github Profile</a>
+                </p>
+            </div>
+        </div>
+        <div class="education">
+            <h2>Education </h2>
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th>University/School</th>
+                        <th>CGPA/Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pimpri Chinchwad University</td>
+                        <td>9.81</td>
+                    </tr>
+                    <tr>
+                        <td>Rani Laxmi Bai Memorial School</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td>Rani Laxmi Bai Memorial School</td>
+                        <td>90%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>C/C++</li>
+                <li>SQL</li>
+                <li>Python</li>
+            </ul>
+        </div>        
+        <div class="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Scored 9.81 CGPA in 1st Sem</li>
+                <li>Achieved a score of 20.00 in MATPO GFG national level contest</li>
+                <li>Participated in a duo hackathon</li>
+            </ul>
+        </div>
+        <div class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>Flight Booking & Managements System</li>
+                <li>Portfolio/Biodata Webpage</li>
+                <li>Login Page design</li>
+            </ul>
+        </div>
+        <div class="certificate">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Programming in C++</li>
+                <li>Foundations of Cybersecurity</li>
+                <li>Introduction to Front-End Development</li>
+            </ul>
+        </div>
+        <div class="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Coding</li>
+                <li>Watching Anime</li>
+                <li>Sketching</li>
+                <li>Travelling</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
