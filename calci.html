@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ead9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .calculator-container {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  input[type="number"] {
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid blue;
+    background-color: #0bbbd6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  h1 {
+    font-size: 24px;
+    color: #0a48cc;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: #333;
+  }
+</style>
+<body>
+  <div class="calculator-container">
+    <h1>Simple Calculator</h1>
+    <form name="calculator">
+      <input type="number" name="num1" id="num1" placeholder="Enter first number" required>
+      <input type="number" name="num2" id="num2" placeholder="Enter second number" required>
+      <br><br>
+      <button type="button" onclick="performOperation('+')">+</button>
+      <button type="button" onclick="performOperation('-')">-</button>
+      <button type="button" onclick="performOperation('*')">*</button>
+      <button type="button" onclick="performOperation('/')">/</button>
+      <br><br>
+      <h3>Result: <span id="result">0</span></h3>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+<script>
+  function performOperation(operator) {
+    // Get input values from the form
+    let num1 = parseFloat(document.calculator.num1.value);
+    let num2 = parseFloat(document.calculator.num2.value);
+    let result = 0;
+
+    // Check if the inputs are valid numbers
+    if (isNaN(num1) || isNaN(num2)) {
+      document.getElementById('result').innerText = "Please enter valid numbers!";
+      return;
+    }
+
+    // Perform the operation based on the operator
+    switch (operator) {
+      case '+':
+        result = num1 + num2;
+        break;
+      case '-':
+        result = num1 - num2;
+        break;
+      case '*':
+        result = num1 * num2;
+        break;
+      case '/':
+        // Handle division by zero error
+        if (num2 === 0) {
+          document.getElementById('result').innerText = "Error: Division by zero!";
+          return;
+        } else {
+          result = num1 / num2;
+        }
+        break;
+      default:
+        document.getElementById('result').innerText = "Invalid operation!";
+        return;
+    }
+
+    // Display the result dynamically on the webpage
+    document.getElementById('result').innerText = result;
+  }
+</script>
