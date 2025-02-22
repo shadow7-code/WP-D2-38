@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photo.css">
+    <title>Photo Gallery</title>
+</head>
+<style>
+h1{
+    text-align: center;
+}
+#container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.item{
+    height:300px;
+    width: 300px;
+    margin: 30px 30px 30px 30px;
+}
+.image{
+    height: 250px;
+    width: 300px;   
+}
+img{
+    height: 250px;
+    width: 300px;
+}
+p{
+    text-align: center ;
+    font-size: x-large;
+}
+img:hover{
+    transform: scale(1.3);
+    transition: 2s transform;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+</style>
+<body>
+    <h1> SEVEN WONDERS OF WORLD </h1>
+    <div id="container">
+        <div class="item">
+            <div class="image" ><img src="https://theimperialtours.com/wp-content/uploads/2024/09/tajmahajnight.jpg"> </div>
+            <a href="https://en.wikipedia.org/wiki/Taj_Mahal"><p>TAJ MAHAL</p></a>
+        </div>
+        <div class="item">
+            <div class="image"><img src="https://media.istockphoto.com/id/506393198/photo/great-wall-of-china.jpg?s=612x612&w=0&k=20&c=cJti-RrdUUkLX_zgzi6KgPbgApHoxJtMJSvlRUYqOzg="> </div>
+            <a href="https://whc.unesco.org/en/list/438/"><p> GREAT WALL OF CHINA </p></a>
+        </div>
+        <div class="item">
+            <div class="image"><img src="https://caminoincamachupicchu.org/cmingutd/wp-content/uploads/2021/06/machu-picchu-ci.jpg"></div>
+            <a href="https://whc.unesco.org/en/list/274/"><p>MACHU PICCHU</p></a>
+        </div>
+        <div class="item">
+            <div class="image"><img src="https://www.travelandleisure.com/thmb/U6Ts4f8fanbARIPQO9pEGzd8icA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/giza-pyramid-EGYPTSECRETS1016-617b2b1b23dd4fd38bc9f365af7235ab.jpg"></div>
+            <a href="https://www.britannica.com/place/Great-Pyramid-of-Giza"><p>PYRAMID OF GIZA</p></a>
+        </div>
+        <div class="item">
+            <div class="image"><img src="https://publisher-ncreg.s3.us-east-2.amazonaws.com/pb-ncregister/swp/hv9hms/media/20231122221124_45448c583eabca7ad6be347939c641312d4ce7570209ad29d3345175aea14fec.jpg"></div>
+            <a href="https://www.britannica.com/topic/Christ-the-Redeemer"><p>CHRIST THE REDEEMER</p></a>
+        </div>
+        <div class="item">
+            <div class="image"><img src="https://www.practically.com/web/assets/blog/108/banner.jpeg"></div>
+            <a href="https://www.britannica.com/place/Petra-ancient-city-Jordan"><p>PETRA</p></a>
+        </div>
+        <div class="item">
+            <div class="image"><img src="https://cdn.britannica.com/30/178930-050-A9761BDF/El-Castillo-Chichen-Itza-Yucatan-Mexico.jpg"></div>
+            <a href="https://whc.unesco.org/en/list/483/"><p>CHICHEN ITZA</p></a>
+        </div>
+    </div>
+</body>
+</html>
